@@ -121,7 +121,12 @@ int main(void)
             glfwSwapBuffers(window);
             glfwPollEvents();
         }
+        delete currentTest;
+        if (currentTest != menu)
+            delete menu;
     }
+    
+
     ImGui_ImplOpenGL3_Shutdown();
     ImGui::DestroyContext();
     glfwTerminate();
