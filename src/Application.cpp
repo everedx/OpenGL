@@ -21,6 +21,7 @@
 
 
 #include "test/TestClearColor.h"
+#include "test/TestTexture2D.h"
 
 int main(void)
 {
@@ -76,6 +77,7 @@ int main(void)
         currentTest = menu;
 
         menu->RegisterTest<test::TestClearColor>("ClearColor");
+        menu->RegisterTest<test::TestTexture2D>("Texture 2D");
 
     
         
